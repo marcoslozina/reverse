@@ -18,10 +18,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/customers")
 public class CustomerRest {
-
-
+  
+   //Quinta linea agregada
    public final CustomerService customerService;
-
+//Quinta linea agregada
     // -------------------Retrieve All Customers--------------------------------------------
 
     @GetMapping
@@ -42,7 +42,7 @@ public class CustomerRest {
                 return  ResponseEntity.notFound().build();
             }
         }
-
+//Quinta linea agregada
         return  ResponseEntity.ok(customers);
     }
 
