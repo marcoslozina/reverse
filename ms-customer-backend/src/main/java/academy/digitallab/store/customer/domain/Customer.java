@@ -26,20 +26,20 @@ import java.util.Date;
 @Table(name="tbl_customers")
 @Entity
 public class Customer  implements Serializable {
-
+    //cuata linea 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+//cuata linea 
     @NotEmpty(message = "El número de documento no puede ser vacío")
     @Size( min = 8 , max = 8, message = "El tamaño del número de documento es 8")
     @Column(name = "number_id" , unique = true ,length = 8, nullable = false)
     private String numberID;
-
+//cuata linea 
     @NotEmpty(message = "El nombre no puede ser vacío")
     @Column(name="first_name", nullable=false)
     private String firstName;
-
+//cuata linea 
     @NotEmpty(message = "El apellido no puede ser vacío")
     @Column(name="last_name", nullable=false)
     private String lastName;
