@@ -2,6 +2,7 @@ package academy.digitallab.store.customer.util;
 
 public class Constant {
     private Constant() {
+		//primera linea agregada
     }
     public static final  String STATE_CREATED = "CREATED";
     public static final  String STATE_DELETED = "DELETED";
