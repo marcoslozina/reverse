@@ -10,9 +10,8 @@ import java.util.List;
 
 @Repository
 public interface CustomerRepository  extends JpaRepository<Customer,Long> {
-         //tercera linea agregada
+
         public Customer findByNumberID(String numberID);
         public List<Customer> findByLastName(String lastName);
         public List<Customer> findByRegion(Region region);
-		//tercera linea agregada
 }
