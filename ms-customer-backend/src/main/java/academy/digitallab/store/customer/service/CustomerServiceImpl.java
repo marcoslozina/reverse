@@ -18,9 +18,9 @@ import java.util.concurrent.TimeUnit;
 @RequiredArgsConstructor
 public class CustomerServiceImpl  implements CustomerService {
 
-
+    //segunda linea agregada
     private final CustomerRepository customerRepository;
-
+    //segunda linea agregada
     @Override
     public List<Customer> findCustomerAll() {
         return customerRepository.findAll();
